@@ -55,6 +55,7 @@ working on.
  - a VAO
  - the parameters to glDrawArrays (drawType, drawStart, drawCount)
  */
+
 struct ModelAsset {
     tdogl::Program* shaders;
     tdogl::Texture* texture;
@@ -91,7 +92,7 @@ struct ModelInstance {
 };
 
 // constants
-const glm::vec2 SCREEN_SIZE(800, 600);
+const glm::vec2 SCREEN_SIZE(1366, 768);
 
 // globals
 GLFWwindow* gWindow = NULL;
@@ -227,27 +228,27 @@ static void CreateInstances() {
     {
         ModelInstance i;
         i.asset = &gWoodenCrate;
-        i.transform = translate(rand()%75,rand()%75,rand()%75) * scale(1,1,1);
+        i.transform = translate(rand()%100,rand()%100,rand()%100) * scale(1,1,1);
         gInstances.push_back(i);
         d = d + 1;
     }
 
     
     
-    // Flat Terrain
-    // for(int c = 0; c <100;)
-    // {
-    //     for(int d = 0; d < 100;)
-    //     {
+    //Flat Terrain
+    for(int c = 0; c <100;)
+    {
+        for(int d = 0; d < 100;)
+        {
             
-    //         ModelInstance i;
-    //         i.asset = &gWoodenCrate;
-    //         i.transform = translate(c,0,d) * scale(1,1,1);
-    //         gInstances.push_back(i);
-    //         d = d + 2;
-    //     }
-    //     c = c + 2;
-    // }
+            ModelInstance e;
+            e.asset = &gWoodenCrate;
+            e.transform = translate(c,0,d) * scale(1,1,1);
+            gInstances.push_back(e);
+            d = d + 2;
+        }
+        c = c + 2;
+    }
 }
 
 
@@ -401,7 +402,7 @@ void AppMain() {
     CreateInstances();
     
     // setup gCamera
-    gCamera.setPosition(glm::vec3(-4,0,17));
+    gCamera.setPosition(glm::vec3(17,3,17));
     gCamera.setViewportAspectRatio(SCREEN_SIZE.x / SCREEN_SIZE.y);
     
     // run while the window is open
