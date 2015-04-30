@@ -47,4 +47,8 @@ You will also need xCode installed as this will include dependencies required by
 
 ## Aim of the game
 
-NOBODY KNOWS!
+The aim of the game is really to enjoy the scenery and float about, whilst you ponder life's decisions. You must also wonder why you haven't ever had the chance to play with something so magnificent in your life. The game is going to be one of the most magical things to play as it's all what's going on in your imagination that counts. 
+
+## Funding
+
+If you really enjoyed the game, because we all know that you did then we are going to be setting up a kickstarter for the next installment of this game, which will be known as "GAHM 2 - Blockier than ever."
