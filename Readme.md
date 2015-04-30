@@ -1,8 +1,7 @@
-[![Build Status](https://travis-ci.org/MADAMULLAC/GAHM.svg?branch=master)](https://travis-ci.org/MADAMULLAC/GAHM)
 
 #Read Me
 
-##Project Plan
+##Original Project Plan
 Please find the project plan outlined [here](https://github.com/MADAMULLAC/GAHM/blob/master/ProjectPlan.md "Project Plan")
 
 ## Prerequisites
@@ -11,6 +10,7 @@ Please find the project plan outlined [here](https://github.com/MADAMULLAC/GAHM/
 - C++11 compiler (tested with GCC 4.8.3+)
 - [GLEW](http://glew.sourceforge.net/)
 - [GLM](http://glm.g-truc.net/)
+- [GLFW](http://www.glfw.org/download.html)
 - Unix like command line (terminal, cygwin, etc…) to run makefile
 
 ## How to get dependencies.
@@ -43,27 +43,7 @@ You will also need xCode installed as this will include dependencies required by
 
 ### Windows
 
-*The Makefile for windows is still under development!*
-
-You will need to install [cygwin](https://www.cygwin.com/) and include the dependencies listed above during the install stage.
-If you do not have those packages and already have cygwin installed; simply re-run the installer and include the packages as before and cygwin will install them.
-
-Please note, that GLM and glew are still not being linked and the makefile is still under development. Windows will hopefully be completed soon.
-
-### Build and run
-
-Then from the game root directory run the following commands:
-
-``` bash
-$ autoreconf -i
-$ ./configure
-$ make
-```
-
-This will produce an executable in the src directory called "shaderexample"; to run execute the game use
-> $ ./src/shaderexample
-
-*IF IT WASN'T ALREADY CLEAR FROM ABOVE, ONCE AGAIN! Don't include the $ sign*
+*The file should work via monoDevelop with all the prerequisites*
 
 ## Aim of the game
 
